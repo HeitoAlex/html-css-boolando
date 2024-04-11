@@ -18,6 +18,7 @@ div{
     position: fixed;
     right: 0;
     left: 0;
+    z-index: 3;
 }
 
 ul{
@@ -47,18 +48,99 @@ span.type>ul>li{
     padding: 1rem 0;
 }
 
-.white{
-    color: white;
-}
-
                     /* main */
 
+.mainsection{
+    padding-top: 62px;
+}
+.maindiv{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
+.mainspan{
+    padding: 1rem 0;
+}
 
+.product{
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
 
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.product .whole{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
+.product:hover  .whole {
+    display: inline;
+}
 
+.discount{
+    background-color: red;
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    bottom: 2rem;
+    left: 0;
+    z-index: 2;
+}
+
+.eco{
+    background-color: green;
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    bottom: 2rem;
+    left: 38px;
+    z-index: 2;
+}
+
+.heart{
+    background-color: white;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 2rem;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart:hover{
+    color: red;
+}
+.price{
+    font-weight: bold;
+    color: red;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+p{
+    font-weight: bold;
+    font-size: 18px;
+}
                     /* footer */
 
 .legal{
@@ -84,4 +166,14 @@ span.social>i{
 
 .bg-color-black{
     background-color: #1B1A1B;
+}
+
+                    /* font color */
+
+.font-white{
+    color: white;
+}
+
+.font-lightgrey{
+    color: #C5C5C5;
 }
